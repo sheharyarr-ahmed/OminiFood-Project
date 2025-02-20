@@ -615,7 +615,6 @@ body {
   display: block;
   width: 100%;
   transition: all 0.4s;
-
 }
 
 .gallery-item img:hover {
@@ -641,6 +640,8 @@ body {
   color: #cf711f;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .pricing-txt2 {
@@ -653,9 +654,54 @@ body {
 .pricing-tags-grids {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
 }
 
+.plan-description {
+  text-align: center;
+}
 
+.plan-name {
+  font-size: 1.8rem;
+  color: #cf711f;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.plan-pricing {
+  font-size: 5.8rem;
+  margin-bottom: 1.8rem;
+  color: #212529;
+  font-weight: 500;
+}
 
+.plan-pricing span {
+  font-size: 2.8rem;
+}
+.plan-moto {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
 
+.pricing-list-container {
+  margin-top: 6.8rem;
+}
+
+.pricing-list {
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.plan-1 a,
+.plan-2 a {
+  margin-top: 4.8rem;
+}
+
+.pricing-btn {
+  text-align: center;
+}
