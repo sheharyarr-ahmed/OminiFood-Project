@@ -626,4 +626,36 @@ body {
   overflow: hidden; /*to make not to overflow the parent container(figure).*/
 }
 
+.section-pricing {
+  padding: 6.6rem 4rem;
+}
+
+.container-pricing {
+  padding: 2.2rem 2.2rem;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.pricing-txt1 {
+  font-size: 1.8rem;
+  color: #cf711f;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.pricing-txt2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 9rem;
+}
+
+.pricing-tags-grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+
 
