@@ -44,6 +44,17 @@ SPACING SYSTEM (px)
 /*********/
 /* GENERAL COMOPONENTS */
 /*********/
+
+.section-custom {
+  padding: 6.6rem 4rem;
+}
+
+.container {
+  padding: 2.2rem;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
 /* .section-n {
   background-color: blue;
   padding: 6.6rem 4rem 9.6rem 4rem;
@@ -662,6 +673,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 8rem;
+  margin-bottom: 3.8rem;
 }
 
 .plan-description {
@@ -746,18 +758,71 @@ body {
   margin-bottom: 3rem;
 }
 
-.section {
-  padding: 6.6rem 4rem 9.6rem 4rem;
-}
-
-.container {
-  padding: 2.2rem 2.2rem;
-  margin: 0 auto;
-  max-width: 120rem;
+.addi-pricing {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 6.6rem;
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 7rem;
+}
 
+.fea-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #e67e22;
+  background-color: #f8d8bd;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.fea-item-logo {
+  margin-bottom: 2.8rem;
+}
+
+.feature-item h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.fea-main {
+  margin-bottom: 1.8rem;
+}
+
+.fea-description {
+  font-size: 1.5rem;
+  color: #212529;
+  line-height: 2;
+  text-align: justify;
+}
+
+.container-cta {
+  padding: 2.2rem 2.2rem;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 50rem;
+  background-image: linear-gradient(to right bottom, #e67e22, #ffa94d);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(28, 80%, 52%, 0.349),
+      hsla(31, 100%, 65%, 0.347)
+    ),
+    url(../img/eating.jpg);
+  background-size: cover;
 }
