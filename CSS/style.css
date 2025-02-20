@@ -635,6 +635,13 @@ body {
   max-width: 120rem;
 }
 
+.plans {
+  background-color: #fdf2e9;
+  padding: 2rem 4rem;
+  width: 75%;
+  border-radius: 4%;
+}
+
 .pricing-txt1 {
   font-size: 1.8rem;
   color: #cf711f;
@@ -654,6 +661,7 @@ body {
 .pricing-tags-grids {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
 }
 
 .plan-description {
@@ -704,4 +712,36 @@ body {
 
 .pricing-btn {
   text-align: center;
+}
+
+.plan-1 {
+  justify-self: end;
+  background-color: white;
+  border: 0.3rem solid #fdf2e9;
+}
+
+.plan-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-2::before {
+  content: "BEST VALUE";
+  background-color: #fcc419;
+  color: #333;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 6%;
+  right: -10%;
+  transform: rotate(45deg);
+}
+
+.pricing-list ul {
+  font-weight: 400;
+}
+
+.pricing-btn--sec-pricing {
+  margin-bottom: 3rem;
 }
