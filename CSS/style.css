@@ -745,3 +745,12 @@ body {
 .pricing-btn--sec-pricing {
   margin-bottom: 3rem;
 }
+.section {
+  padding: 6.6rem 4rem 9.6rem 4rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2.2rem 4.2rem;
+}
