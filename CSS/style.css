@@ -811,10 +811,11 @@ body {
 .cta-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  height: 50rem;
+  /* height: 50rem; height removed. we set that before just to see the height of grid so that grid can be seen in the beginning */
   background-image: linear-gradient(to right bottom, #e67e22, #ffa94d);
   border-radius: 2rem;
   overflow: hidden;
+  box-shadow: 0 12px 6px 10px rgba(0, 0, 0, 0.05);;
 }
 
 .cta-img-box {
@@ -825,4 +826,104 @@ body {
     ),
     url(../img/eating.jpg);
   background-size: cover;
+}
+
+.cta-txt-box {
+  padding: 6rem;
+}
+
+.cta-txt-box h3 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #2e1907;
+  margin-bottom: 4.8rem;
+}
+
+.cta-txt-box p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #2e1907;
+  margin-bottom: 3.8rem;
+  line-height: 1.8;
+}
+
+.form-btn {
+  background-color: #555;
+  padding: 1.2rem 2.4rem;
+}
+.form-container {
+  margin-top: 1.8rem;
+
+}
+.form-cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.8rem;
+}
+
+.form-cta label {
+display: block;
+font-size: 1.4rem;
+font-weight: 500;
+font-family: inherit;
+margin-bottom: 1rem;
+color: #2e1907;
+}
+
+.form-cta input {
+width: 100%;
+padding: 1.2rem;
+font-size: 1.4rem;
+font-weight: 500;
+font-family: inherit;
+color: #2e1907;
+}
+
+.form-cta input::placeholder {
+  color: #aaa;
+}
+
+.form-cta select {
+width: 100%;
+padding: 1.2rem;
+font-size: 1.4rem;
+font-weight: 500;
+font-family: inherit;
+color: #2e1907;
+}
+
+.form-cta input, 
+.form-cta select {
+  border-radius: 9px;
+  border: none;
+  background-color: #fdf2e9;
+
+}
+
+.btn--cta {
+  background-color: #2e1907;
+  color: #fdf2e9;
+  border: none;
+  border-radius: 9px;
+  padding: 1.2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: end; 
+}
+
+.btn--cta:hover {
+  background-color: #fdf2e9;
+  color: #2e1907;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 2px solid #37b24d; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.50);
+}
+
+.cta-txt-box *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(243, 175, 115, 0.499);
 }
