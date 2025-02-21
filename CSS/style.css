@@ -815,7 +815,7 @@ body {
   background-image: linear-gradient(to right bottom, #e67e22, #ffa94d);
   border-radius: 2rem;
   overflow: hidden;
-  box-shadow: 0 12px 6px 10px rgba(0, 0, 0, 0.05);;
+  box-shadow: 0 12px 6px 10px rgba(0, 0, 0, 0.05);
 }
 
 .cta-img-box {
@@ -853,7 +853,6 @@ body {
 }
 .form-container {
   margin-top: 1.8rem;
-
 }
 .form-cta {
   display: grid;
@@ -862,21 +861,21 @@ body {
 }
 
 .form-cta label {
-display: block;
-font-size: 1.4rem;
-font-weight: 500;
-font-family: inherit;
-margin-bottom: 1rem;
-color: #2e1907;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: inherit;
+  margin-bottom: 1rem;
+  color: #2e1907;
 }
 
 .form-cta input {
-width: 100%;
-padding: 1.2rem;
-font-size: 1.4rem;
-font-weight: 500;
-font-family: inherit;
-color: #2e1907;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: #2e1907;
 }
 
 .form-cta input::placeholder {
@@ -884,20 +883,19 @@ color: #2e1907;
 }
 
 .form-cta select {
-width: 100%;
-padding: 1.2rem;
-font-size: 1.4rem;
-font-weight: 500;
-font-family: inherit;
-color: #2e1907;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: #2e1907;
 }
 
-.form-cta input, 
+.form-cta input,
 .form-cta select {
   border-radius: 9px;
   border: none;
   background-color: #fdf2e9;
-
 }
 
 .btn--cta {
@@ -909,7 +907,7 @@ color: #2e1907;
   font-size: 1.7rem;
   font-weight: 700;
   cursor: pointer;
-  align-self: end; 
+  align-self: end;
 }
 
 .btn--cta:hover {
@@ -920,10 +918,24 @@ color: #2e1907;
 *:focus {
   outline: none;
   /* outline: 2px solid #37b24d; */
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.50);
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .cta-txt-box *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(243, 175, 115, 0.499);
+}
+
+/*********/
+/* FOOTER */
+/*********/
+
+.container-footer {
+  padding: 6.6rem 4rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
 }
