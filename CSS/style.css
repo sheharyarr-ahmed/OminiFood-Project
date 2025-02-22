@@ -46,7 +46,7 @@ SPACING SYSTEM (px)
 /*********/
 
 .section-custom {
-  padding: 6.6rem 4rem;
+  padding: 1rem 4rem 12.8rem 4rem
 }
 
 .container {
@@ -931,11 +931,98 @@ body {
 /*********/
 
 .container-footer {
-  padding: 6.6rem 4rem;
+  padding: 12.8rem 8rem;
+  border-top: 0.5rem solid #fdf2e9;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
+  gap: 8rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.copyright {
+  margin-top: auto;
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  font-weight: 400;
+
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+
+}
+
+.social-tag {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #6f6f6f;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #494848;
+}
+
+address {
+  font-style: normal;
+}
+
+address p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  color: #555;
+}
+
+address a:link,
+address a:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  color: #555;
+  transition: all 0.3s;
+}
+
+address a:hover,
+address a:active {
+  color: #494848;
 }
