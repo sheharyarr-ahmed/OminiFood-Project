@@ -8,7 +8,7 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
     max-width: 120rem;
   }
 }
-
+/* for devices size below 1200 */
 @media (max-width: 75em) {
   html {
     font-size: 56.25%; /*only for this line the font-size is considered as 56.25% (9px) but not for the other elements in the query, the font size will be changed or applied to this element font-size only */
@@ -56,5 +56,83 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
 
   .customer-tst {
     column-gap: 2.4rem;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* for devices size below 944 */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .images-container {
+    justify-content: center;
+  }
+
+  .hero-btn-box {
+    justify-content: center;
+  }
+
+  .images-container {
+    margin-top: 3.2rem;
+  }
+
+  .hero {
+    gap: 6.4rem;
+  }
+
+  .logos-images img {
+    height: 2.4rem;
+  }
+
+  .step-heading {
+    font-size: 2.4rem;
+  }
+
+  .meals-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(28rem, 1fr)
+    ); /* Adjust column sizes */
+    column-gap: 2rem; /* Adds spacing between meal items */
+    row-gap: 3rem;
+    justify-items: center;
+  }
+  .testimonial-containers {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .cta-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .form-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    background-position: center;
   }
 }

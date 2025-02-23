@@ -717,6 +717,10 @@ body {
   gap: 1.8rem;
 }
 
+.pricing-list ul {
+  line-height: 1.8rem;
+}
+
 .plan-1 a,
 .plan-2 a {
   margin-top: 4.8rem;
