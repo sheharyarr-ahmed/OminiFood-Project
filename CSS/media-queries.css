@@ -106,14 +106,6 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
     font-size: 2.4rem;
   }
 
-  .meals-container {
-    grid-template-columns: 1fr;
-
-    /* Adjust column sizes */
-    column-gap: 2rem; /* Adds spacing between meal items */
-    row-gap: 3rem;
-    justify-items: center;
-  }
   .testimonial-containers {
     grid-template-columns: 1fr;
   }
@@ -209,11 +201,10 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
 
   .meals-container {
     grid-template-columns: 1fr;
-  }
 
-  .diet-list-container {
-    grid-column: 1/3;
-    grid-row: 2;
+    /* Adjust column sizes */
+    /* column-gap: 2rem; Adds spacing between meal items */
+    row-gap: 3rem;
     justify-items: center;
   }
 
