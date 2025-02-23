@@ -107,10 +107,9 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
   }
 
   .meals-container {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(28rem, 1fr)
-    ); /* Adjust column sizes */
+    grid-template-columns: 1fr;
+
+    /* Adjust column sizes */
     column-gap: 2rem; /* Adds spacing between meal items */
     row-gap: 3rem;
     justify-items: center;
@@ -208,6 +207,10 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .meals-container {
+    grid-template-columns: 1fr;
+  }
+
   .diet-list-container {
     grid-column: 1/3;
     grid-row: 2;
@@ -273,5 +276,37 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
 
   .hero-img {
     width: 80%;
+  }
+
+  /*this one means that 3rd element of the container-how whose name step-image-box should get moved to row 4th8 */
+  .step-image-box:nth-child(3) {
+    grid-row: 4;
+  }
+
+  .customer-tst {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .pricing-tags-grids {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .meals-container {
+    grid-template-columns: 1fr;
   }
 }
