@@ -46,7 +46,7 @@ SPACING SYSTEM (px)
 /*********/
 
 .section-custom {
-  padding: 1rem 4rem 12.8rem 4rem
+  padding: 1rem 4rem 12.8rem 4rem;
 }
 
 .container {
@@ -945,7 +945,6 @@ body {
 .logo-col {
   display: flex;
   flex-direction: column;
-
 }
 
 .copyright {
@@ -953,7 +952,6 @@ body {
   font-size: 1.6rem;
   color: #6f6f6f;
   font-weight: 400;
-
 }
 .footer-logo {
   display: block;
@@ -964,7 +962,6 @@ body {
   list-style: none;
   display: flex;
   gap: 2rem;
-
 }
 
 .social-tag {
