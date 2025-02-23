@@ -142,7 +142,6 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
 
   .menu-btn {
     display: block;
-
   }
 
   .nav-main {
@@ -157,6 +156,38 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
     justify-content: center;
     align-items: center;
 
+    /* The correct way to hide any element, for that we usually do these following steps
+    
+    1. hide it visually: */
+    opacity: 0;
+
+    /* 2. make it unaccessble for mouse and keyborad */
+    pointer-events: none;
+
+    /* 3. hide it from screen readers */
+    visibility: hidden;
+
+    /* adding the functionality to make menu appear from left side with an transition */
+
+    transform: translateX(100%);
+    /* after doing transform translate x also add overflow-x to hidden in the style.css file as well in the body and html section and make the nav-main's position absolute and the main-nav parents which is header position to relative section so that it can be hidden  */
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-open .nav-main {
+    /* the opposite of the above properties when the menu is open: */
+
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-btn[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-btn[name="menu-outline"] {
+    display: none;
   }
 
   .nav-list {
@@ -165,11 +196,82 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
   }
 
   .nav-links:link,
-.nav-links:visited {
+  .nav-links:visited {
     font-size: 3rem;
+  }
 }
 
+/* for devices size below 704 */
+@media (max-width: 44em) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
+  .diet-list-container {
+    grid-column: 1/3;
+    grid-row: 2;
+    justify-items: center;
+  }
+
+  .plans {
+    width: 100%;
+  }
+
+  .plan-2::before {
+    top: 4%;
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .account-col {
+    grid-column: 1/2;
+  }
+  .company-col {
+    grid-column: 2/4;
+  }
+  .resouces-col {
+    grid-column: 4/6;
+  }
+
+  .logo-col {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .contact-col {
+    grid-column: 3/6;
+    grid-row: 2/3;
+  }
 }
 
- 
+/* for devices size below 576 */
+@media (max-width: 36em) {
+  .grid--2-col {
+    grid-template-columns: 1fr;
+  }
+
+  .logos-images img {
+    height: 1.2rem;
+  }
+
+  .logos-images {
+    gap: 2rem;
+  }
+  .hero {
+    padding: 0 4.2rem;
+  }
+
+  .hero-section {
+    padding: 2.4rem 0 6.4rem 0rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+}
