@@ -133,10 +133,11 @@ so if we choose a breakpoint that is 1350px so what we do is that 1350/16 = 84em
 
   .menu-btn {
     display: block;
+    z-index: 999;
   }
 
   .nav-main {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.97);
     position: absolute;
     top: 0%;
     left: 0%;

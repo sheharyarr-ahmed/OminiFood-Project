@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head>˛
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Omnifood</title>
+  <link rel="icon" href="/img/favicon copy.png" />
+  <title>Omnifood &mdash; Never Cook Again!</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/media-queries.css" />
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script defer src="js/script.js"></script>
 </head>
 <!-- a nav-open class was added in the header class oh which work was done which can be found in media query file -->
 
@@ -21,11 +24,11 @@
     </a>
     <nav class="nav-main">
       <ul class="nav-list">
-        <li><a class="nav-links" href="#">How it works</a></li>
-        <li><a class="nav-links" href="#">Meals</a></li>
-        <li><a class="nav-links" href="#">Testimonials</a></li>
-        <li><a class="nav-links" href="#">Pricing</a></li>
-        <li><a class="nav-links nav-cta" href="#">Try for free</a></li>
+        <li><a class="nav-links" href="#how">How it works</a></li>
+        <li><a class="nav-links" href="#meals">Meals</a></li>
+        <li><a class="nav-links" href="#testimonials">Testimonials</a></li>
+        <li><a class="nav-links" href="#pricing">Pricing</a></li>
+        <li><a class="nav-links nav-cta" href="#cta">Try for free</a></li>
       </ul>
     </nav>
 
@@ -47,7 +50,7 @@
             nutritional needs. We have delivered 250,000+ meals last year!
           </p>
           <div class="hero-btn-box">
-            <a href="#" class="btn btn-full">Start Eating Well</a>
+            <a href="#cta" class="btn btn-full">Start Eating Well</a>
             <a href="#" class="btn btn-outline">Learn More &darr;</a>
           </div>
           <div class="images-container">
@@ -81,7 +84,7 @@
         </div>
       </div>
     </section>
-    <section class="section-how">
+    <section class="section-how" id="how">
       <div class="container-how   grid--2-col">
         <div class="step-text-box">
           <h2 class="section-how-sub-heading">HOW IT WORKS</h2>
@@ -130,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <div class="container-section-meals">
         <div class="container-section-meals-text">
           <h2 class="section-meals-subheading">MEALS</h2>
@@ -235,7 +238,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonial-section">
+    <section class="testimonial-section" id="testimonials">
       <div class="testimonial-containers">
         <div class="testimonials">
           <div class="testimonial-text">
@@ -319,7 +322,7 @@
         </div>
       </div>
     </section>
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
       <div class="container-pricing">
         <div class="pricing-text">
           <p class="pricing-txt1">pricing</p>
@@ -442,7 +445,7 @@
         </div>
       </div>
     </section>
-    <section class="section-cta section-custom">
+    <section class="section-cta section-custom" id="cta">
       <div class="container-cta">
         <div class="cta-grid">
           <div class="cta-txt-box">
@@ -508,7 +511,7 @@
             </li>
           </ul>
           <p class="footer-text copyright">
-            Copyright &copy; 2027 by Omnifood, Inc, All rights reserved.
+            Copyright &copy; <span class="year">2027</span> by Omnifood, Inc, All rights reserved.
           </p>
         </div>
         <div class="contact-col">
